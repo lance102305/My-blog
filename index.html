@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lance | Personal Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-bg: #121212;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-color: #7400e8;
+            --text-main: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(116, 0, 232, 0.3);
+        }
+
+        /* Modernized Header */
+        .personal-header {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('image/My Profile.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 120px 0;
+            border-radius: 0 0 80px 80px;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .btn-success {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-success:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+        }
+
+        .navbar {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: var(--accent-color);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        footer {
+            background-color: #0a0a0a !important;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 50px;
+        }
+
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">👤 LANCE.DEV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+    <a class="nav-link" href="project.html">Projects</a>
+</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+<header class="personal-header text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold text-white">Hi, I'm <span style="color: #a29bfe;">Lance</span> 👋</h1>
+        <p class="lead text-light">Aspiring Web Developer | Creative Designer | Guitar Lover</p>
+        <a href="contact.html" class="btn btn-success mt-3 shadow">Hire Me</a>
+    </div>
+</header>
+
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="font-size: 2rem;">🎸</div>
+                    <h5 class="card-title fw-bold">Hobbies & Interests</h5>
+                    <p class="card-text text-secondary">
+                        Playing guitar, drawing, designing clothes, and dominating in online games.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div style="height:6px; background:linear-gradient(90deg,#ff9966,#ff5e62); border-radius: 20px 20px 0 0;"></div>
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="font-size: 2rem;">✨</div>
+                    <h5 class="card-title fw-bold">Daily Inspiration</h5>
+                    <p class="card-text text-secondary">
+                        Music and quality time with my family and friends keep my creative juices flowing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div style="height:6px; background:linear-gradient(90deg,#36d1dc,#5b86e5); border-radius: 20px 20px 0 0;"></div>
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="font-size: 2rem;">🚀</div>
+                    <h5 class="card-title fw-bold">The Mission</h5>
+                    <p class="card-text text-secondary">
+                        This blog is a digital canvas for my ideas, hobbies, and my journey into the tech world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5">
+    <div class="p-5" style="background: rgba(255,255,255,0.02); border-radius: 30px; border: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="section-title">Get to know me</h2>
+        <div class="row mt-4">
+            <div class="col-lg-8">
+                <p class="lead">Hello! I'm <strong>Lance Edison Toledo</strong>, an aspiring web developer and creative designer.</p>
+                <p class="text-secondary">I love learning new skills, exploring new technologies, and expressing myself through my hobbies and projects. Whether it's a guitar riff or a line of code, I strive for harmony and creativity.</p>
+                <p class="text-secondary">I believe that creativity and hard work can make anything possible! This blog is where I share my ideas, experiences, and inspirations with the world.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-white text-center p-4">
+    <div class="container">
+        <p class="mb-0 opacity-75">© 2026 Lance Edison Toledo | Built with Passion & Code</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lance | Personal Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-bg: #121212;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-color: #7400e8;
+            --text-main: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(116, 0, 232, 0.3);
+        }
+
+        /* Modernized Header */
+        .personal-header {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('image/My Profile.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 120px 0;
+            border-radius: 0 0 80px 80px;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .btn-success {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-success:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+        }
+
+        .navbar {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: var(--accent-color);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        footer {
+            background-color: #0a0a0a !important;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 50px;
+        }
+
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">👤 LANCE.DEV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+    <a class="nav-link" href="project.html">Projects</a>
+</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+<header class="personal-header text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold text-white">Hi, I'm <span style="color: #a29bfe;">Lance</span> 👋</h1>
+        <p class="lead text-light">Aspiring Web Developer | Creative Designer | Guitar Lover</p>
+        <a href="contact.html" class="btn btn-success mt-3 shadow">Hire Me</a>
+    </div>
+</header>
+
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="font-size: 2rem;">🎸</div>
+                    <h5 class="card-title fw-bold">Hobbies & Interests</h5>
+                    <p class="card-text text-secondary">
+                        Playing guitar, drawing, designing clothes, and dominating in online games.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div style="height:6px; background:linear-gradient(90deg,#ff9966,#ff5e62); border-radius: 20px 20px 0 0;"></div>
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="font-size: 2rem;">✨</div>
+                    <h5 class="card-title fw-bold">Daily Inspiration</h5>
+                    <p class="card-text text-secondary">
+                        Music and quality time with my family and friends keep my creative juices flowing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div style="height:6px; background:linear-gradient(90deg,#36d1dc,#5b86e5); border-radius: 20px 20px 0 0;"></div>
+                <div class="card-body text-center p-4">
+                    <div class="mb-3" style="font-size: 2rem;">🚀</div>
+                    <h5 class="card-title fw-bold">The Mission</h5>
+                    <p class="card-text text-secondary">
+                        This blog is a digital canvas for my ideas, hobbies, and my journey into the tech world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5">
+    <div class="p-5" style="background: rgba(255,255,255,0.02); border-radius: 30px; border: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="section-title">Get to know me</h2>
+        <div class="row mt-4">
+            <div class="col-lg-8">
+                <p class="lead">Hello! I'm <strong>Lance Edison Toledo</strong>, an aspiring web developer and creative designer.</p>
+                <p class="text-secondary">I love learning new skills, exploring new technologies, and expressing myself through my hobbies and projects. Whether it's a guitar riff or a line of code, I strive for harmony and creativity.</p>
+                <p class="text-secondary">I believe that creativity and hard work can make anything possible! This blog is where I share my ideas, experiences, and inspirations with the world.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-white text-center p-4">
+    <div class="container">
+        <p class="mb-0 opacity-75">© 2026 Lance Edison Toledo | Built with Passion & Code</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
